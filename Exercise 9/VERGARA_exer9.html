@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LAB9_HTML</title>
+</head>
+
+<body>
+    <h2>Order Form</h2>
+    <form>
+        <!--Customer Details -->
+        <fieldset>
+            <legend>Customer Details</legend>
+
+            <br>
+            <!-- Name -->
+            <label for=customerName>Customer name:</label>
+            <input type="text" name="nameOfcustomer" id="customerName" required>
+            
+            <br>
+            <br>
+
+            <!-- Mobile Number -->
+            <label for=mobileNumber>Mobile number:</label>
+            <input type="text" name="numberOfcustomer" id="mobileNumber" required>
+            
+            <br>
+            <br>
+
+            <!-- E-mail Address --> 
+            <label for="email">E-mail address:</label>
+            <input type="email" name="userEmail" id="email" required>
+            
+            <br>
+            <br>
+        </fieldset>
+
+
+        <!--Pizza Options -->
+        <fieldset>
+            <legend>Pizza Options</legend>
+            
+            <br>
+
+            <!--Flavor -->
+            <label for="flavor">Flavor:</label>
+            <select name="pizzaFlavor" id="flavor">
+				<option value="hawaiian">Hawaiian</option>
+				<option value="doubleCheese">Double Cheese</option>
+				<option value="margherita">Margherita</option>
+				<option value="BBC">Barbecue Bacon Cheese Burger</option>
+				<option value="PepperoniNcheese">Pepperoni and Cheese</option>
+			</select>
+
+            <br>
+            <br>
+
+            <!--Size of Pizza -->
+            Size: 
+            
+            <br>
+
+            <input type="radio" name="size" id="small" value="smallSize">
+            <label for="small">Small</label>
+
+            <input type="radio" name="size" id="medium" value="mediumSize">
+            <label for="medium">Medium</label>
+
+            <input type="radio" name="size" id="large" value="largeSize">
+            <label for="large">Large</label>
+            
+            <br>
+            <br>
+
+            <!-- Extra Toppings -->
+            Extra Toppings: 
+            <br>
+
+            <input type="checkbox" name="toppings" value="bacon" id="bacon">
+            <label for="bacon">Bacon</label>
+
+            <input type="checkbox" name="toppings" value="cheese" id="cheese">
+            <label for="cheese">Cheese</label>
+
+            <input type="checkbox" name="toppings" value="onion" id="onion">
+            <label for="onion">Onion</label>
+
+            <input type="checkbox" name="toppings" value="mushroom" id="mushroom">
+            <label for="mushroom">Mushroom</label>
+            
+            <br>
+            <br>
+        </fieldset>
+
+
+        <!--Delivery Details -->
+        <fieldset>
+            <legend>Delivery Details</legend>
+            <br>
+            <!--Date -->
+            <label for="date">Delivery date:</label>
+            <input type="date" name="deliveryDate" id="date" required>
+            
+            <br>
+            <br>
+
+            <!--Time -->
+            <label for="time">Preferred delivery time:</label>
+            <input type="time" name="deliveryTime" id="time" required>
+            
+            <br>
+            <br>
+
+            <!-- Delivery Address -->
+            <label for="address">Delivery address:</label><br>
+            <textarea rows="5" cols="70" id="address" required></textarea>
+            
+            <br>
+            <br>
+        </fieldset>
+
+        <!--reset, submit buttons -->
+        <br>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit Order</button>
+    </form>
+</body>
+
+</html>
